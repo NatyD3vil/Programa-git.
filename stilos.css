@@ -1,0 +1,147 @@
+header{
+    display: flex;
+    height: 60px;
+    justify-content: center;;
+    background-color: #67a9e7;
+    color: white;
+    text-align: center;
+    align-items:center ;
+    padding: 10px 10%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 30px;
+}
+
+nav a{
+    font-weight: 600;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+    margin-right: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.columna-izquierda, .columna-derecha {
+    width: 48%; 
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.cajaFormulario{
+    width: 40%;    
+    height: 60px;
+    padding: 10px;
+    margin-left: 240px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%; 
+    border: 1px solid #ddd;
+}
+
+footer {
+    background-color: #67a9e7;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 90px;
+  }
+  
+  .list {
+    list-style: none;
+  }
+  
+  .elem {
+    padding: initial;
+  }
+  
+  .elem:hover {
+    color: rgb(32, 7, 172);
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .title {
+    color: rgb(28, 14, 155);
+    position: relative;
+    padding-bottom: 5px;
+  }
+  
+  .title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 30px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #47daff;
+  }
+  
+  .social-elems {
+    padding-top: 20px;
+  }
+  
+  .social-elem {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: #0b2383;
+  }
+  
+  .social-media a:hover {
+    color: #ffffff;
+  }
+  
+  @media (max-width: 700px) {
+    .footer {
+      display: flex;
+      justify-content: center;
+    }
+    .footer-content {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .title::after {
+      content: "";
+      position: absolute;
+      left: 0%;
+      top: 100%;
+      width: 30px;
+      height: 3px;
+      border-radius: 5px;
+      background-color: #ffe647;
+    }
+  }
